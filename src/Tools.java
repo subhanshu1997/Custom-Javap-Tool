@@ -146,7 +146,7 @@ public class Tools extends javax.swing.JFrame {
 			Constructor cs[]=c.getConstructors();
 			String text="";
 			for(Constructor ff:cs){
-			 text=text+(counter++)+":"+ff+"\n";
+			 text=text+(counter++)+":"+" "+ff+"\n";
 			jTextArea1.setText(text);
 			}
 			}catch (Exception e) {
@@ -161,7 +161,7 @@ public class Tools extends javax.swing.JFrame {
 			Field f[] = c.getFields();
 			String text = "";
 			for (Field ff : f) {
-				text = text + (counter++) + ":" + ff + "\n";
+				text = text + (counter++) + ":" +" "+ ff + "\n";
 				jTextArea1.setText(text);
 			}
 		} catch (Exception e) {
@@ -176,7 +176,7 @@ public class Tools extends javax.swing.JFrame {
 			Method f[] = c.getMethods();
 			String text = "";
 			for (Method ff : f) {
-				text = text + (counter++) + ":" + ff + "\n";
+				text = text + (counter++) + ":" +" "+ ff + "\n";
 				jTextArea1.setText(text);
 			}
 		} catch (Exception e) {
